@@ -42,7 +42,7 @@ Asegúrate de configurar correctamente tu clave API de OpenAI como variable de e
 
 1. Abre el archivo `main.ipynb` en Jupyter Notebook o en Google Colab.
 2. Ejecuta cada celda en el orden indicado.
-3. El notebook extraerá el texto de cada factura, entrenará el modelo PLN, extraerá los campos de interés y los guardará en archivos `.csv` y `.xlsx`.
+3. El notebook extraerá el texto de cada factura, entrenará el modelo NLP, extraerá los campos de interés y los guardará en archivos `.csv` y `.xlsx`.
 
 ### Guardar y Verificar Resultados
 
@@ -54,7 +54,7 @@ Asegúrate de configurar correctamente tu clave API de OpenAI como variable de e
 
 - El código recorre los archivos en el directorio de facturas, extrae el texto usando `pdfplumber` y guarda el texto en archivos `.txt`.
 
-### Entrenamiento de Modelo PLN
+### Entrenamiento de Modelo NLP
 
 - Se cargan datos etiquetados para la división en conjuntos de entrenamiento y prueba.
 - El modelo `spaCy` se entrena para reconocer las entidades de interés en el texto de las facturas.

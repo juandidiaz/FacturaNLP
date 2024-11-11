@@ -1,11 +1,11 @@
 # Proyecto de Extracción de Información de Facturas en PDF
 
-Este proyecto tiene como objetivo leer archivos PDF de facturas y extraer información clave como fecha, CIF, número de factura, teléfono, importe total, razón social, el texto completo de cada factura y el archivo en formato Base64. Utiliza **spaCy** para el procesamiento de lenguaje natural (PLN) y la API de **OpenAI** para el procesamiento de textos.
+Este proyecto tiene como objetivo leer archivos PDF de facturas y extraer información clave como fecha, CIF, número de factura, teléfono, importe total, razón social, el texto completo de cada factura y el archivo en formato Base64. Utiliza **spaCy** para el procesamiento de lenguaje natural (NLP) y la API de **OpenAI** para el procesamiento de textos.
 
 ## Características
 
 - **Extracción de Texto**: Se extrae el contenido textual de archivos PDF de facturas utilizando `pdfplumber`.
-- **Entrenamiento de Modelo PLN**: Se entrena un modelo de PLN con `spaCy` para identificar entidades como Fecha, CIF, Número de Factura, Teléfono e Importe Total.
+- **Entrenamiento de Modelo NLP**: Se entrena un modelo de NLP con `spaCy` para identificar entidades como Fecha, CIF, Número de Factura, Teléfono e Importe Total.
 - **Integración con OpenAI**: Utiliza la API de OpenAI para extraer la razón social de cada factura de manera precisa.
 - **Almacenamiento Estructurado**: Los datos extraídos se guardan en un archivo CSV y en un archivo Excel para facilitar su análisis.
 
@@ -22,7 +22,7 @@ Para ejecutar este proyecto, necesitas instalar las siguientes librerías:
 
 ```bash
 pip install pdfplumber spacy pandas scikit-learn openai
-
+```
 ## Asegúrate de Configurar tu Clave API
 
 Asegúrate de configurar correctamente tu clave API de OpenAI como variable de entorno o archivo de configuración para evitar exponerla en el código.
